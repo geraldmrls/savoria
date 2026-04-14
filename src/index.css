@@ -2,7 +2,20 @@
 
 @theme{
     --color-primary-bg: #fbf8f2;
-
-
     --color-buttons-bg: #b85c38;
+}
+
+:where(html, body) {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background-color: var(--color-primary-bg);
+  color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
 }
