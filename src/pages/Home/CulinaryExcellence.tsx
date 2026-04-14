@@ -14,7 +14,7 @@ export function CulinaryExcellence() {
       </div>
 
       {/* cards container */}
-      <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 px-[7.5vw] pb-4 scroll-smooth" style={{scrollbarWidth: "none", msOverflowStyle: "none"}}>
+      <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 px-[7.5vw] pb-10 scroll-smooth" style={{scrollbarWidth: "none", msOverflowStyle: "none"}}>
         {/* signature dishes card */}
         <div className="snap-center shrink-0 w-[85vw] max-w-[24rem] flex flex-col rounded-3xl bg-white p-6 shadow-lg shadow-black/10">
           <img className="rounded-3xl object-cover" src={sigDishes} alt="water with ice" />

@@ -1,11 +1,20 @@
 @import "tailwindcss";
 
-@theme{
-    --color-primary-bg: #fbf8f2;
-    --color-buttons-bg: #b85c38;
-    --color-navbar-bg: white;
+@theme {
+  /* like beish color */
+  --color-primary-bg: #fbf8f2;
 
-    --color-light-purple-bg: #f6eaf7;
+  /* like brown color for buttons bg */
+  --color-buttons-bg: #b85c38;
+
+  /* like white color for navbar bg */
+  --color-navbar-bg: white;
+
+  /* like light purple color for light background */
+  --color-light-purple-bg: #f6eaf7;
+
+  /* purple background color */
+  --color-button-purple-bg: #7148b5;
 }
 
 :where(html, body) {
