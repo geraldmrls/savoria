@@ -3,6 +3,9 @@
 @theme{
     --color-primary-bg: #fbf8f2;
     --color-buttons-bg: #b85c38;
+    --color-navbar-bg: white;
+
+    --color-light-purple-bg: #f6eaf7;
 }
 
 :where(html, body) {

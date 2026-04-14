@@ -1,11 +1,14 @@
 // components
 import { Header } from "../../components/Header/Header.tsx";
-import { QualityInfo } from "./QualityInfo.tsx";
+import { BottomNavBar } from "../../components/BottomNavBar/BottomNavBar.tsx";
 
 // image background
 import bgHome from "../../assets/viejo-te.jpg";
-import { CulinaryExcellence } from "../../components/Header/CulinaryExcellence.tsx";
 import { ContentOnImage } from "./ContentOnImage.tsx";
+import { QualityInfo } from "./QualityInfo.tsx";
+import { CulinaryExcellence } from "./CulinaryExcellence.tsx";
+
+
 
 import "./Home.css";
 
@@ -26,6 +29,9 @@ export function Home() {
 
       {/* culinary excellence */}
       <CulinaryExcellence />
+
+      {/* bottom nav bar */}
+      <BottomNavBar />
     </div>
   );
 }
