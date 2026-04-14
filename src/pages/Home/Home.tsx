@@ -1,11 +1,9 @@
 // components
-import { Header } from "../../components/Header/Header.tsx";
 import { ContentOnImage } from "./ContentOnImage.tsx";
 import { QualityInfo } from "./QualityInfo.tsx";
 import { CulinaryExcellence } from "./CulinaryExcellence.tsx";
 import { MakeReservationInfo } from "./MakeReservationInfo.tsx";
 import { ContactInfo } from "./ContactInfo.tsx";
-import { BottomNavBar } from "../../components/BottomNavBar/BottomNavBar.tsx";
 
 // image background
 import bgHome from "../../assets/viejo-te.jpg";
@@ -18,7 +16,6 @@ import "./Home.css";
 export function Home() {
   return (
     <div className="pt-20 mb-35">
-      <Header />
 
       {/* background image */}
       <div
@@ -40,9 +37,6 @@ export function Home() {
 
       {/* contact info */}
       <ContactInfo />
-
-      {/* bottom nav bar */}
-      <BottomNavBar />
     </div>
   );
 }
