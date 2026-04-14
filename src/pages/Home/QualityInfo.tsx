@@ -8,11 +8,11 @@ export function QualityInfo() {
     <>
       {/* quality container */}
 
-      <div className="pt-14 flex flex-col gap-10 pb-14 px-4 max-w-3xl mx-auto">
+      <div className="pt-14 flex flex-col gap-10 px-4 max-w-3xl mx-auto">
         {/* star circle */}
         <div className="text-center">
-          <div className="w-16 h-16 rounded-full border-2 border-buttons-bg flex items-center justify-center mx-auto">
-            <StarIcon className="h-8 w-8 stroke-buttons-bg fill-white" />
+          <div className="w-16 h-16 rounded-full border-2 border-brown-bg flex items-center justify-center mx-auto">
+            <StarIcon className="h-8 w-8 stroke-brown-bg fill-white" />
           </div>
 
           <p className="text-center mt-2.5 text-lg font-semibold">Premium Quality</p>
@@ -23,8 +23,8 @@ export function QualityInfo() {
 
         {/* clock circle */}
         <div className="text-center">
-          <div className="w-16 h-16 rounded-full border-2 border-buttons-bg flex items-center justify-center mx-auto">
-            <ClockIcon className="h-8 w-8 stroke-buttons-bg fill-white" />
+          <div className="w-16 h-16 rounded-full border-2 border-brown-bg flex items-center justify-center mx-auto">
+            <ClockIcon className="h-8 w-8 stroke-brown-bg fill-white" />
           </div>
 
           <p className="text-center mt-2.5 text-lg font-semibold">Open Daily</p>
@@ -36,8 +36,8 @@ export function QualityInfo() {
         {/* location circle */}
 
         <div className="text-center">
-          <div className="w-16 h-16 rounded-full border-2 border-buttons-bg flex items-center justify-center mx-auto">
-            <LocationIcon className="h-8 w-8 stroke-buttons-bg fill-white" />
+          <div className="w-16 h-16 rounded-full border-2 border-brown-bg flex items-center justify-center mx-auto">
+            <LocationIcon className="h-8 w-8 stroke-brown-bg fill-white" />
           </div>
 
           <p className="text-center mt-2.5 text-lg font-semibold">Prime Location</p>

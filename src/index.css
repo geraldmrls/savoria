@@ -5,7 +5,9 @@
   --color-primary-bg: #fbf8f2;
 
   /* like brown color for buttons bg */
-  --color-buttons-bg: #b85c38;
+  --color-brown-bg: #b85c38;
+  /* darker brown color */
+  --color-brown-bg-dark: #2c1810;
 
   /* like white color for navbar bg */
   --color-navbar-bg: white;
@@ -15,6 +17,9 @@
 
   /* purple background color */
   --color-button-purple-bg: #7148b5;
+
+  /* border color for yellow buttons */
+  --color-yellow-border: #d4a574;
 }
 
 :where(html, body) {

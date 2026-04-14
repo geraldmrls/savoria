@@ -4,13 +4,12 @@ import dessert from "../../assets/dessert.jpg";
 
 export function CulinaryExcellence() {
   return (
-    <div className="bg-primary-bg mb-30">
+    <div className="bg-primary-bg mt-15">
       {/* title */}
-      <div className="py-15 flex flex-col items-center gap-1 text-3xl">
-        <h1>Culinary</h1>
-        <h1>Excellence</h1>
+      <div className="pb-8 flex flex-col items-center gap-1 text-3xl">
+        <h2 className="font-semibold text-center">Culinary Excellence</h2>
         {/* line */}
-        <div className="border border-buttons-bg mx-auto w-1/4 mt-4"></div>
+        <div className="border border-brown-bg mx-auto w-1/4 mt-4"></div>
       </div>
 
       {/* cards container */}
