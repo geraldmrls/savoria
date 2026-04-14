@@ -4,6 +4,7 @@ import { ContentOnImage } from "./ContentOnImage.tsx";
 import { QualityInfo } from "./QualityInfo.tsx";
 import { CulinaryExcellence } from "./CulinaryExcellence.tsx";
 import { MakeReservationInfo } from "./MakeReservationInfo.tsx";
+import { ContactInfo } from "./ContactInfo.tsx";
 import { BottomNavBar } from "../../components/BottomNavBar/BottomNavBar.tsx";
 
 // image background
@@ -37,6 +38,8 @@ export function Home() {
       {/*Make reservation section  */}
       <MakeReservationInfo />
 
+      {/* contact info */}
+      <ContactInfo />
 
       {/* bottom nav bar */}
       <BottomNavBar />

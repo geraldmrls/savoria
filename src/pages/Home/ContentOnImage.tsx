@@ -3,7 +3,7 @@ export function ContentOnImage() {
     <>
       {/* content on image */}
       <div className="relative z-10 py-6 flex flex-col items-center justify-center gap-4 px-4 h-100">
-        <h4 className="text-white text-center text-2xl font-semibold max-w-xl">
+        <h4 className="text-white text-center text-xl sm:text-2xl font-semibold max-w-xl">
           An Experience Worth Savoring
         </h4>
 
@@ -12,7 +12,7 @@ export function ContentOnImage() {
 
         {/* description */}
 
-        <p className="text-white max-w-[24rem] text-center text-sm leading-6">
+        <p className="text-white max-w-[22rem] sm:max-w-[24rem] text-center text-sm sm:text-base leading-6">
           Where culinary artistry meets timeless elegance. Every dish tells a
           story, every moment creates a memory
         </p>

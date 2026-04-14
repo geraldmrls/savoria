@@ -15,8 +15,8 @@ export function QualityInfo() {
             <StarIcon className="h-8 w-8 stroke-brown-bg fill-white" />
           </div>
 
-          <p className="text-center mt-2.5 text-lg font-semibold">Premium Quality</p>
-          <p className="text-center mt-2.5 text-sm leading-6">
+          <p className="text-center mt-2.5 text-base sm:text-lg font-semibold">Premium Quality</p>
+          <p className="text-center mt-2.5 text-sm sm:text-base leading-6">
             Locally sourced ingredients, expertly crafted
           </p>
         </div>
@@ -27,8 +27,8 @@ export function QualityInfo() {
             <ClockIcon className="h-8 w-8 stroke-brown-bg fill-white" />
           </div>
 
-          <p className="text-center mt-2.5 text-lg font-semibold">Open Daily</p>
-          <p className="text-center mt-2.5 text-sm leading-6">
+          <p className="text-center mt-2.5 text-base sm:text-lg font-semibold">Open Daily</p>
+          <p className="text-center mt-2.5 text-sm sm:text-base leading-6">
             Serving breakfast, lunch, and dinner
           </p>
         </div>
@@ -40,8 +40,8 @@ export function QualityInfo() {
             <LocationIcon className="h-8 w-8 stroke-brown-bg fill-white" />
           </div>
 
-          <p className="text-center mt-2.5 text-lg font-semibold">Prime Location</p>
-          <p className="text-center mt-2.5 text-sm leading-6">Heart of the culinary district</p>
+          <p className="text-center mt-2.5 text-base sm:text-lg font-semibold">Prime Location</p>
+          <p className="text-center mt-2.5 text-sm sm:text-base leading-6">Heart of the culinary district</p>
         </div>
       </div>
     </>
