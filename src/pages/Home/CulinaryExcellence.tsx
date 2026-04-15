@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
 
-// images
-import waterIceImage from "../../assets/water-ice.jpg";
-import sigDishes from "../../assets/sig-dishes.jpg";
-import dessert from "../../assets/dessert.jpg";
+// data for the first 3 dishes
+import { homeDishes } from "../../data/homeDishes.ts";
+
+// hooks
+import { cn } from "../../utils/cn.ts";
 
 export function CulinaryExcellence() {
   return (
@@ -38,47 +39,52 @@ export function CulinaryExcellence() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="flex overflow-x-auto snap-x snap-mandatory gap-4 px-[7.5vw] pb-10 scroll-smooth"
+        className={cn(
+          // mobile
+          "flex overflow-x-auto snap-x snap-mandatory gap-4 px-[7.5vw] pb-10 scroll-smoot",
+
+          // desktop
+          "lg:justify-between lg:gap-0 lg:pb-0 lg:px-45",
+        )}
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
-        {/* signature dishes card */}
-        <div className="snap-center shrink-0 w-[85vw] max-w-[24rem] flex flex-col rounded-3xl bg-white p-6 shadow-lg shadow-black/10">
-          <img
-            className="rounded-3xl object-cover"
-            src={sigDishes}
-            alt="water with ice"
-          />
-          <h1 className="mt-4 text-lg sm:text-xl">Signature Dishes</h1>
-          <p className="mt-2.5 text-gray-600 text-sm sm:text-base">
-            Expertly plated culinary masterpieces
-          </p>
-        </div>
+        {/* map cards sig dishes, craft and desserts*/}
+        {homeDishes &&
+          homeDishes.map((dishes) => {
+            return (
+              <div
+                key={dishes.id}
+                className={cn(
+                  // mobile
+                  "snap-center shrink-0 w-[85vw] max-w-[24rem] flex flex-col rounded-3xl bg-white p-6 shadow-lg shadow-black/10",
 
-        {/* cocktail */}
-        <div className="snap-center shrink-0 w-[85vw] max-w-[24rem] flex flex-col rounded-3xl bg-white p-6 shadow-lg shadow-black/10">
-          <img
-            className="rounded-3xl object-cover"
-            src={waterIceImage}
-            alt="water with ice"
-          />
-          <h1 className="mt-4 text-lg sm:text-xl">Craft Cocktails</h1>
-          <p className="mt-2.5 text-gray-600 text-sm sm:text-base">
-            Handcrafted cocktails with fresh ingredients
-          </p>
-        </div>
+                  // desktop
 
-        {/* dessert */}
-        <div className="snap-center shrink-0 w-[85vw] max-w-[24rem] flex flex-col rounded-3xl bg-white p-6 shadow-lg shadow-black/10">
-          <img
-            className="rounded-3xl object-cover"
-            src={dessert}
-            alt="water with ice"
-          />
-          <h1 className="mt-4 text-lg sm:text-xl">Delicious Desserts</h1>
-          <p className="mt-2.5 text-gray-600 text-sm sm:text-base">
-            Indulgent sweet treats to end your meal on a high note
-          </p>
-        </div>
+                  "lg:p-0 lg:rounded-none lg:px-0 lg:pb-0 lg:bg-primary-bg lg:shadow-none",
+                )}
+              >
+                {/* image and title container */}
+                <div className="group">
+                  <div className="group relative overflow-hidden rounded-3xl lg:rounded-none lg:h-115">
+                    <img
+                      className="w-full object-cover rounded-3xl lg:rounded-none lg:group-hover:scale-110 lg:transition-transform lg:duration-500"
+                      src={dishes.image}
+                      alt="water with ice"
+                    />
+                    {/* overlay */}
+                  </div>
+
+                  <h1 className="mt-4 text-lg sm:text-xl lg:group-hover:text-brown-bg transition-all duration-500">
+                    {dishes.name}
+                  </h1>
+                </div>
+
+                <p className="mt-2.5 text-gray-600 text-sm sm:text-base">
+                  {dishes.description}
+                </p>
+              </div>
+            );
+          })}
       </motion.div>
     </div>
   );
