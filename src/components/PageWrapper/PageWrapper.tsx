@@ -1,11 +1,22 @@
 import { motion } from "motion/react";
+import { useSwipeNavigation } from "../SwipeContext/SwipeContext.tsx";
 
-export function PageWrapper({ children, direction }: { children: React.ReactNode, direction: number }) {
+const variants = {
+  initial: (direction: number) => ({ x: direction * 100 + "%", opacity: 0 }),
+  animate: { x: 0, opacity: 1 },
+  exit: (direction: number) => ({ x: direction * -100 + "%", opacity: 0 }),
+};
+
+export function PageWrapper({ children }: { children: React.ReactNode }) {
+  const { direction } = useSwipeNavigation();
+
   return (
     <motion.div
-      initial={{ x: direction * 100 + "%", opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: direction * -100 + "%", opacity: 0 }}
+      custom={direction}
+      variants={variants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
       transition={{ duration: 0.3, ease: "easeInOut" }}
     >
       {children}

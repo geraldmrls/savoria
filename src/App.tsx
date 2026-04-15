@@ -1,8 +1,8 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "motion/react";
 
-// hooks
-import { useSwipeNavigation } from "./hooks/useSwipeNavigation.ts";
+// context
+import { useSwipeNavigation } from "./components/SwipeContext/SwipeContext.tsx";
 
 // components
 import { PageWrapper } from "./components/PageWrapper/PageWrapper.tsx";
@@ -29,9 +29,9 @@ function App() {
       >
         <AnimatePresence mode="wait" custom={direction}>
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<PageWrapper direction={direction}><Home /></PageWrapper>} />
-            <Route path="/menu" element={<PageWrapper direction={direction}><Menu /></PageWrapper>} />
-            <Route path="/showcase" element={<PageWrapper direction={direction}><Showcase /></PageWrapper>} />
+            <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
+            <Route path="/menu" element={<PageWrapper><Menu /></PageWrapper>} />
+            <Route path="/showcase" element={<PageWrapper><Showcase /></PageWrapper>} />
           </Routes>
         </AnimatePresence>
       </div>

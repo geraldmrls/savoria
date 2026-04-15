@@ -1,3 +1,6 @@
+
+// file usefull file any more it was replaced by SwipeContext.tsx
+
 import { useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
