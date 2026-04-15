@@ -21,7 +21,7 @@ export function BottomNavBar() {
       "mt-10 flex justify-between px-8 py-2 bg-navbar-bg rounded-tr-2xl rounded-tl-2xl fixed bottom-0 left-0 right-0 z-50 shadow-[0_-4px_6px_rgba(0,0,0,0.1)]",
 
       //desktop styles - mine
-      "md:hidden lg:hidden xl:hidden 2xl:hidden"
+      "lg:hidden xl:hidden 2xl:hidden"
     )}>
 
       <Link to="/">

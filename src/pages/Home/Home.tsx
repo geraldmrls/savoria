@@ -8,7 +8,8 @@ import { ContactInfo } from "./ContactInfo.tsx";
 // image background
 import bgHome from "../../assets/viejo-te.jpg";
 
-
+// hooks
+import { cn } from "../../utils/cn.ts";
 
 
 import "./Home.css";
@@ -20,7 +21,13 @@ export function Home() {
       {/* background image */}
       <div
         style={{ backgroundImage: `url(${bgHome})` }}
-        className=" flex flex-col justify-center items-center relative bg-cover bg-center h-115 mt-4 before:bg-black/60 before:absolute before:inset-0"
+        className={cn(
+          // mobile
+          "flex flex-col justify-center items-center relative bg-cover bg-center h-115 mt-4 before:bg-black/60 before:absolute before:inset-0",
+
+          // desktop
+          "lg:h-160 lg:mt-8"
+        )}
       >
         {/* content on image */}
         {<ContentOnImage />}

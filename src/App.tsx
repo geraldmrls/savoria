@@ -8,11 +8,11 @@ import { useSwipeNavigation } from "./hooks/useSwipeNavigation.ts";
 import { PageWrapper } from "./components/PageWrapper/PageWrapper.tsx";
 import { Header } from "./components/Header/Header.tsx";
 import { BottomNavBar } from "./components/BottomNavBar/BottomNavBar.tsx";
-
-import "./App.css";
 import { Home } from "./pages/Home/Home.tsx";
 import { Menu } from "./pages/Menu/Menu.tsx";
 import { Showcase } from "./pages/Showcase/Showcase.tsx";
+
+import "./App.css";
 
 function App() {
   const location = useLocation();
