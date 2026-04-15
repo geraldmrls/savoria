@@ -1,5 +1,8 @@
 import { motion } from "motion/react";
 
+// hooks
+import { cn } from "../../utils/cn.ts";
+
 // svg
 import StarIcon from "../../assets/star-icon.svg?react";
 import ClockIcon from "../../assets/clock-icon.svg?react";
@@ -9,8 +12,13 @@ export function QualityInfo() {
   return (
     <>
       {/* quality container */}
+      <div className={cn(
+        // mobile
+        "bg-white py-14 flex flex-col gap-10 px-4 max-w-3xl mx-auto",
 
-      <div className="bg-white pt-14 flex flex-col gap-10 px-4 max-w-3xl mx-auto pb-14">
+        // desktop
+        "lg:flex-row lg:justify-center lg:mx-0 lg:max-w-full lg:py-20"
+      )}>
         {/* star circle */}
         <motion.div 
           initial={{ opacity: 0, y: 20}}
