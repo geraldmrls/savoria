@@ -7,6 +7,8 @@ import { homeDishes } from "../../data/homeDishes.ts";
 import { cn } from "../../utils/cn.ts";
 
 export function CulinaryExcellence() {
+  const browserWidth = window.outerWidth;
+  const lineWidth = `${browserWidth >= 620 ? "10%" : "25%"}`;
   return (
     <div className="bg-primary-bg pt-8">
       {/* title */}
@@ -24,10 +26,10 @@ export function CulinaryExcellence() {
         {/* line */}
         <motion.div
           initial={{ width: 0 }}
-          whileInView={{ width: "25%" }}
+          whileInView={{ width: lineWidth }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           viewport={{ once: true }}
-          className="border border-brown-bg mx-auto w-1/4 mt-4"
+          className="border border-brown-bg mx-auto mt-4"
         ></motion.div>
       </div>
 
@@ -44,7 +46,7 @@ export function CulinaryExcellence() {
           "flex overflow-x-auto snap-x snap-mandatory gap-4 px-[7.5vw] pb-10 scroll-smoot",
 
           // desktop
-          "lg:justify-between lg:gap-0 lg:pb-0 lg:px-45",
+          "lg:overflow-x-hidden lg:p-0 lg:justify-center",
         )}
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
@@ -60,7 +62,7 @@ export function CulinaryExcellence() {
 
                   // desktop
 
-                  "lg:p-0 lg:rounded-none lg:px-0 lg:pb-0 lg:bg-primary-bg lg:shadow-none",
+                  "lg:p-0 lg:rounded-none lg:bg-primary-bg lg:shadow-none",
                 )}
               >
                 {/* image and title container */}
