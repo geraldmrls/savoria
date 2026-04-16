@@ -9,12 +9,11 @@ type Buttons = {
 
 export function CategoryMeals() {
   const buttons: Buttons[] = [
-    { innerText: "ALL" },
     { innerText: "MEALS" },
     { innerText: "DRINKS" },
     { innerText: "DESSERTS" },
   ];
-  const [buttonActive, setButtonActive] = useState<string>("ALL");
+  const [buttonActive, setButtonActive] = useState<string>("MEALS");
 
   return (
     <div className="flex flex-col justify-center items-center">
