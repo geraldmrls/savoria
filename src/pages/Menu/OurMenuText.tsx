@@ -12,7 +12,7 @@ export function OurMenuText() {
       <div
         className={cn(
           // mobile styles
-          "mt-20 bg-brown-bg-dark h-70 flex flex-col items-center justify-center",
+          " bg-brown-bg-dark h-70 flex flex-col items-center justify-center",
         )}
       >
         <h1 className="text-white text-3xl">Our Menu</h1>
