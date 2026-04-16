@@ -27,7 +27,7 @@ export function ContactInfo() {
 
       <footer>
         <p className="text-center mt-6 text-xs sm:text-sm">
-          &copy; 2023 Savoria. All rights reserved.
+          &copy; 2026 Savoria. All rights reserved. Created by geraldmrls
         </p>
       </footer>
     </div>
