@@ -16,7 +16,7 @@ export function Header() {
         "lg:py-9 lg:px-45 lg:text-left flex lg:items-center lg:justify-between header-fonts",
       )}
     >
-      <NavLink to="/">
+      <NavLink to="/" replace>
         <h1
           className={cn(
             // mobile styles
@@ -42,6 +42,7 @@ export function Header() {
       >
         <NavLink
           to="/"
+          replace
           className={({ isActive }) =>
             cn(
               "text-base hover:text-yellow-border cursor-pointer",
@@ -54,6 +55,7 @@ export function Header() {
         </NavLink>
 
         <NavLink
+          replace
           to="/menu"
           className={({ isActive }) =>
             cn(
@@ -67,6 +69,7 @@ export function Header() {
         </NavLink>
 
         <NavLink
+          replace
           to="/showcase"
           className={({ isActive }) =>
             cn(
