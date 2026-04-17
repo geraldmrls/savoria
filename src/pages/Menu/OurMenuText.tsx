@@ -3,6 +3,8 @@ import { motion } from "motion/react";
 // hooks
 import { cn } from "../../utils/cn.ts";
 
+import "./Menu.css"
+
 export function OurMenuText() {
   const browserWidth = window.innerWidth;
   const lineWidth = `${browserWidth >= 1024 ? "200px" : "100px"}`;
@@ -12,7 +14,7 @@ export function OurMenuText() {
       <div
         className={cn(
           // mobile styles
-          " bg-brown-bg-dark py-20 flex flex-col items-center justify-center lg:py-25",
+          " bg-brown-bg-dark py-20 flex flex-col items-center justify-center lg:py-25 our-menu-fonts",
         )}
       >
         <h1 className="text-white text-3xl lg:text-6xl">Our Menu</h1>
@@ -26,7 +28,7 @@ export function OurMenuText() {
           className="border border-brown-bg mx-auto mt-4 lg:mt-8"
         ></motion.div>
 
-        <p className="text-amber-50 text-center mt-4 w-80 lg:mt-8">
+        <p className="text-amber-50 text-center mt-4 w-80 lg:mt-8 lg:w-1/2">
           Discover our carefully curated selection of dishes, drinks, and
           desserts
         </p>
