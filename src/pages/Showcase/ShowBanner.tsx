@@ -13,10 +13,10 @@ export function ShowBanner() {
       <div
         className={cn(
           // mobile styles
-          " bg-brown-bg-dark py-20 flex flex-col items-center justify-center lg:py-45",
+          " bg-brown-bg-dark py-20 flex flex-col items-center justify-center lg:py-25",
         )}
       >
-        <h1 className="text-white text-3xl lg:text-7xl">Our Menu</h1>
+        <h1 className="text-white text-3xl lg:text-6xl">Virtual Tour</h1>
 
         {/* line */}
         <motion.div
@@ -24,10 +24,10 @@ export function ShowBanner() {
           whileInView={{ width: lineWidth }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           viewport={{ once: true }}
-          className="border border-brown-bg mx-auto mt-4"
+          className="border border-brown-bg mx-auto mt-4 lg:mt-8"
         ></motion.div>
 
-        <p className="text-amber-50 text-center mt-4 w-80">
+        <p className="text-amber-50 text-center mt-4 w-80 lg:mt-8">
           Discover our carefully curated selection of dishes, drinks, and
           desserts
         </p>

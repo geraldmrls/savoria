@@ -10,7 +10,7 @@ export function CulinaryExcellence() {
   const browserWidth = window.outerWidth;
   const lineWidth = `${browserWidth >= 620 ? "10%" : "25%"}`;
   return (
-    <div className="bg-primary-bg pt-8">
+    <div className="bg-primary-bg pt-8 lg:mb-20">
       {/* title */}
       <div className="pb-8 flex flex-col items-center gap-1 text-2xl sm:text-3xl">
         <motion.h2

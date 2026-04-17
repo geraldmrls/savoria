@@ -19,7 +19,7 @@ function App() {
   const { handleTouchStart, handleTouchEnd, direction } = useSwipeNavigation();
 
   return (
-    <div className="relative mb-30 mt-18">
+    <div className="relative mb-30 mt-18 lg:mb-0 lg:mt-28">
       <Header />
 
       <div

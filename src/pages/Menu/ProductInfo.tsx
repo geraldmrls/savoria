@@ -49,7 +49,7 @@ export function ProductInfo({ buttonActive }: ProductInfoProps) {
         },
       }}
       // classes
-      className="mt-7 w-full lg:w-300"
+      className="mt-7 w-full lg:w-300 mb-5 lg:mb-10"
     >
       {filtered.map((item) => (
         <SwiperSlide key={item.id} className="flex justify-center">
