@@ -16,7 +16,7 @@ import "./Home.css";
 
 export function Home() {
   return (
-    <div className="pt-20 mb-35 lg:mb-0">
+    <div className="mt-18 lg:mb-0">
 
       {/* background image */}
       <div

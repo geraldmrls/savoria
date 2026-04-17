@@ -1,9 +1,10 @@
+
 import { motion } from "motion/react";
 
 // hooks
 import { cn } from "../../utils/cn.ts";
 
-export function OurMenuText() {
+export function ShowBanner() {
   const browserWidth = window.innerWidth;
   const lineWidth = `${browserWidth >= 1024 ? "200px" : "100px"}`;
   return (
