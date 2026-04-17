@@ -17,7 +17,7 @@ export function ContentOnImage() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className={cn(
           // mobile
-          "relative z-10 py-6 flex flex-col items-center justify-center gap-4 px-4 h-115",
+          "relative z-10 py-6 flex flex-col items-center justify-center gap-4 px-4 h-115 content-image-fonts",
 
           // desktop
 

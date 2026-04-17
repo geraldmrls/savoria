@@ -13,7 +13,7 @@ export function Header() {
         "bg-primary-bg/95 py-4 px-4 sm:px-5 text-center shadow-md fixed w-full top-0 left-0 z-50 backdrop-blur-sm flex justify-center",
 
         // desktop styles
-        "lg:py-9 lg:px-45 lg:text-left flex lg:items-center lg:justify-between",
+        "lg:py-9 lg:px-45 lg:text-left flex lg:items-center lg:justify-between header-fonts",
       )}
     >
       <NavLink to="/">
