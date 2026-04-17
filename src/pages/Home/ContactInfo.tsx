@@ -1,7 +1,7 @@
 export function ContactInfo() {
   return (
     // contact info container
-    <div className="bg-brown-bg-dark mt-12 text-amber-50 py-16 px-7 lg:mt-20 lg:flex lg:flex-col lg:justify-center lg:items-center">
+    <div className="bg-brown-bg-dark text-amber-50 py-16 px-7 lg:mt-20 lg:flex lg:flex-col lg:justify-center lg:items-center">
       
       <div className="lg:flex lg:items-center lg:justify-between lg:w-140">
         {/* hours info */}

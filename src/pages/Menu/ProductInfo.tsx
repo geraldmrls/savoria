@@ -69,7 +69,7 @@ export function ProductInfo({ buttonActive }: ProductInfoProps) {
               {item.description}
             </p>
           </div>
-          <p className="mt-2 font-semibold text-brown-bg text-center mb-8">
+          <p className="mt-2 font-semibold text-brown-bg text-center">
             ${item.price}
           </p>
         </SwiperSlide>

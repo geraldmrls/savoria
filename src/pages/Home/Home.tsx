@@ -2,7 +2,6 @@
 import { ContentOnImage } from "./ContentOnImage.tsx";
 import { QualityInfo } from "./QualityInfo.tsx";
 import { CulinaryExcellence } from "./CulinaryExcellence.tsx";
-import { MakeReservationInfo } from "./MakeReservationInfo.tsx";
 import { ContactInfo } from "./ContactInfo.tsx";
 
 // image background
@@ -38,9 +37,6 @@ export function Home() {
 
       {/* culinary excellence */}
       <CulinaryExcellence />
-
-      {/*Make reservation section  */}
-      <MakeReservationInfo />
 
       {/* contact info */}
       <ContactInfo />
