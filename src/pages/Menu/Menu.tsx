@@ -5,7 +5,7 @@ import { ContactInfo } from "../Home/ContactInfo.tsx";
 export function Menu() {
   return (
     <>
-      <div className="flex flex-col h-screen mt-18 lg:mt-28">
+      <div className="lg:mt-28">
         <OurMenuText />
         <CategoryMeals />
       </div>

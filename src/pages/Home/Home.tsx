@@ -16,14 +16,14 @@ import "./Home.css";
 
 export function Home() {
   return (
-    <div className="mt-18 lg:mb-0">
+    <div className="lg:mb-0">
 
       {/* background image */}
       <div
         style={{ backgroundImage: `url(${bgHome})` }}
         className={cn(
           // mobile
-          "flex flex-col justify-center items-center relative bg-cover bg-center h-115 mt-4 before:bg-black/60 before:absolute before:inset-0",
+          "flex flex-col justify-center items-center relative bg-cover bg-center h-115 before:bg-black/60 before:absolute before:inset-0",
 
           // desktop
           "lg:h-160 lg:mt-8"
