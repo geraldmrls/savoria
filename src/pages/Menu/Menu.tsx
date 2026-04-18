@@ -1,6 +1,5 @@
 import { CategoryMeals } from "./CategoryMeals.tsx";
 import { OurMenuText } from "./OurMenuText.tsx";
-import { ContactInfo } from "../../components/ContactInfo.tsx";
 
 export function Menu() {
   return (
@@ -9,7 +8,6 @@ export function Menu() {
         <OurMenuText />
         <CategoryMeals />
       </div>
-      <ContactInfo/>
     </>
   );
 }

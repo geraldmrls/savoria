@@ -30,7 +30,7 @@ export function CategoryMeals() {
             onClick={() => setButtonActive(button.innerText)}
             className={`
               shrink-0 px-5 py-2 rounded-full text-sm font-medium tracking-wide
-              border transition-all duration-200
+              border transition-all duration-200 cursor-pointer
               ${
                 button.innerText === buttonActive
                   ? "bg-brown-bg text-white border-brown-bg"
