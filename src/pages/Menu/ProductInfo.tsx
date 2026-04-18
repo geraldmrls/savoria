@@ -15,6 +15,7 @@ type ProductInfoProps = {
   buttonActive: string;
 };
 
+// component
 export function ProductInfo({ buttonActive }: ProductInfoProps) {
   const swiperRef = useRef<SwiperRef>(null);
 
@@ -25,6 +26,7 @@ export function ProductInfo({ buttonActive }: ProductInfoProps) {
   return (
     <div className="relative w-full lg:w-250 select-none"
       onTouchStart={e=>e.stopPropagation()}
+      key={buttonActive}
     >
       {/* custom prev button */}
       <LeftArrow

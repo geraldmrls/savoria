@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // components
 import { ProductInfo } from "./ProductInfo.tsx";
@@ -13,7 +13,14 @@ export function CategoryMeals() {
     { innerText: "DRINKS" },
     { innerText: "DESSERTS" },
   ];
-  const [buttonActive, setButtonActive] = useState<string>("MEALS");
+  const [buttonActive, setButtonActive] = useState<string>(()=>{
+    const storedButtonType = localStorage.getItem("button-type");
+    return storedButtonType ? JSON.parse(storedButtonType) : "MEALS"
+  });
+
+  useEffect(()=>{
+    localStorage.setItem("button-type", JSON.stringify(buttonActive))
+  }, [buttonActive])
 
   return (
     <div className="flex flex-col justify-center items-center">
